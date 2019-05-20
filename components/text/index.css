@@ -1,0 +1,82 @@
+/* @define Text */
+
+@import "../base/global";
+
+.Text {
+  display: block;
+  width: 100%;
+  max-width: 27em;
+}
+
+.Text--full {
+  max-width: none;
+}
+
+.Text--wide {
+  max-width: 50em;
+}
+
+.Text > p {
+  margin: calc(var(--space) * 2) 0;
+}
+
+.Text > p:first-child {
+  margin-top: 0;
+}
+
+.Text > p:last-child {
+  margin-bottom: 0;
+}
+
+.Text > img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.Text a {
+  position: relative;
+  font-weight: bold;
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.Text a:hover {
+  color: #fff;
+  background: var(--color);
+  padding: 0.08em 0.12em 0;
+  margin: -0.08em -0.12em 0;
+  border: 0;
+}
+
+.Text--light a:hover {
+  color: var(--color);
+  background: #fff;
+}
+
+.Text--adaptive a {
+  font-weight: inherit;
+  color: inherit;
+  border: 0;
+}
+
+/**
+ * 1. Maintain 16/9 aspect ratio for embedded content
+ */
+
+.Text iframe {
+  width: 100vw;
+  height: calc((100vw - calc(var(--space) * 8)) * 9/16); /* 1 */
+  max-width: 100%;
+  vertical-align: top;
+  user-select: none;
+}
+
+.Text h1,
+.Text h2,
+.Text h3 {
+  margin: 0;
+  font: inehrit;
+  font-weight: bold;
+}

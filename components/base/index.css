@@ -1,0 +1,94 @@
+@import "normalize.css";
+@import "./transitions";
+@import "./display";
+@import "./layout";
+@import "./space";
+@import "./size";
+@import "./text";
+
+@font-face {
+  font-family: "GTE";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./gte-light.woff") format("woff");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "GTE";
+  font-style: normal;
+  font-weight: bold;
+  src: url("./gte-medium.woff") format("woff");
+  font-display: block;
+}
+
+:root {
+  background: var(--theme);
+  background-attachment: fixed;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--font-line-height);
+  letter-spacing: var(--font-letter-spacing);
+}
+
+::selection {
+  background: var(--selection-color);
+}
+
+::-moz-selection {
+  background: var(--selection-color);
+}
+
+html {
+  min-height: 100%;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+pre,
+blockquote {
+  margin: 0;
+  font: inherit;
+  line-height: inherit;
+}
+
+hr {
+  display: block;
+  width: 100%;
+  height: 2px;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  background-color: currentColor;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+blockquote {
+  margin: 0;
+}
+
+pre {
+  white-space: pre-wrap;
+  font: 13px/1.4 monospace;
+  max-width: 100%;
+  overflow: scroll;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 1em;
+}

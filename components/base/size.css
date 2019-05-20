@@ -1,0 +1,192 @@
+/* @define utilities */
+
+.u-size1of6 {
+  flex-basis: auto !important;
+  width: calc(100% * 1 / 6) !important;
+}
+
+.u-size1of {
+  flex-basis: auto !important;
+  width: 20% !important;
+}
+
+.u-size1of4 {
+  flex-basis: auto !important;
+  width: 25% !important;
+}
+
+.u-size1of3,
+.u-size2of6 {
+  flex-basis: auto !important;
+  width: calc(100% * 1 / 3) !important;
+}
+.u-size2of5 {
+  flex-basis: auto !important;
+  width: 40% !important;
+}
+
+.u-size1of2,
+.u-size2of4 {
+  flex-basis: auto !important;
+  width: 50% !important;
+}
+
+.u-size3of5 {
+  flex-basis: auto !important;
+  width: 60% !important;
+}
+
+.u-size2of3,
+.u-size4of6 {
+  flex-basis: auto !important;
+  width: calc(100% * 2 / 3) !important;
+}
+
+.u-size3of4 {
+  flex-basis: auto !important;
+  width: 75% !important;
+}
+
+.u-size4of5 {
+  flex-basis: auto !important;
+  width: 80% !important;
+}
+
+/**
+ * Medium
+ */
+
+@media (min-width: 600px) {
+  .u-md-size1of6 {
+    flex-basis: auto !important;
+    width: calc(100% * 1 / 6) !important;
+  }
+
+  .u-md-size1of5 {
+    flex-basis: auto !important;
+    width: 20% !important;
+  }
+
+  .u-md-size1of4 {
+    flex-basis: auto !important;
+    width: 25% !important;
+  }
+
+  .u-md-size1of3,
+  .u-md-size2of6 {
+    flex-basis: auto !important;
+    width: calc(100% * 1 / 3) !important;
+  }
+
+  .u-md-size2of5 {
+    flex-basis: auto !important;
+    width: 40% !important;
+  }
+
+  .u-md-size1of2,
+  .u-md-size2of4,
+  .u-md-size3of6 {
+    flex-basis: auto !important;
+    width: 50% !important;
+  }
+
+  .u-md-size3of5 {
+    flex-basis: auto !important;
+    width: 60% !important;
+  }
+
+  .u-md-size2of3,
+  .u-md-size4of6 {
+    flex-basis: auto !important;
+    width: calc(100% * 2 / 3) !important;
+  }
+
+  .u-md-size3of4 {
+    flex-basis: auto !important;
+    width: 75% !important;
+  }
+
+  .u-md-size4of5 {
+    flex-basis: auto !important;
+    width: 80% !important;
+  }
+
+  .u-md-size5of6 {
+    flex-basis: auto !important;
+    width: calc(100% * 5 / 6) !important;
+  }
+}
+
+/**
+ * Large
+ */
+
+@media (min-width: 1000px) {
+  .u-lg-size1of6 {
+    flex-basis: auto !important;
+    width: calc(100% * 1 / 6) !important;
+  }
+
+  .u-lg-size1of5 {
+    flex-basis: auto !important;
+    width: 20% !important;
+  }
+
+  .u-lg-size1of4 {
+    flex-basis: auto !important;
+    width: 25% !important;
+  }
+
+  .u-lg-size1of3,
+  .u-lg-size2of6 {
+    flex-basis: auto !important;
+    width: calc(100% * 1 / 3) !important;
+  }
+
+  .u-lg-size2of5 {
+    flex-basis: auto !important;
+    width: 40% !important;
+  }
+
+  .u-lg-size1of2,
+  .u-lg-size2of4,
+  .u-lg-size3of6 {
+    flex-basis: auto !important;
+    width: 50% !important;
+  }
+
+  .u-lg-size3of5 {
+    flex-basis: auto !important;
+    width: 60% !important;
+  }
+
+  .u-lg-size2of3,
+  .u-lg-size4of6 {
+    flex-basis: auto !important;
+    width: calc(100% * 2 / 3) !important;
+  }
+
+  .u-lg-size3of4 {
+    flex-basis: auto !important;
+    width: 75% !important;
+  }
+
+  .u-lg-size4of5 {
+    flex-basis: auto !important;
+    width: 80% !important;
+  }
+
+  .u-lg-size5of6 {
+    flex-basis: auto !important;
+    width: calc(100% * 5 / 6) !important;
+  }
+}
+
+/**
+ * Make an element the width of its parent.
+ */
+
+.u-sizeFull {
+  width: 100% !important;
+  flex: 1 0 100% !important;
+}

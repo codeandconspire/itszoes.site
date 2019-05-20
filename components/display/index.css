@@ -1,0 +1,43 @@
+/* @define Display */
+
+@import "../base/global";
+
+.Display,
+.Display-link {
+  display: block;
+  color: var(--color);
+  font-size: inherit;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.Display--1 {
+  font-size: var(--font-size-heading);
+  line-height: 0.95;
+}
+
+.Display--footer {
+  font-size: var(--font-size-heading-footer);
+  line-height: 0.9;
+}
+
+/**
+ * Display link
+ */
+
+.Display-link {
+  display: inline-block;
+  position: relative;
+  color: var(--link-color);
+
+  font-weight: bold;
+  color: var(--link-color);
+  text-decoration: none;
+  padding: 0.02em 0.08em 0em;
+  margin: 0 -0.08em;
+}
+
+.Display-link:hover {
+  color: #fff;
+  background: var(--color);
+}
