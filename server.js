@@ -38,7 +38,7 @@ app.use(get('/media/:type/:transform/:uri(.+)', async function (ctx, type, trans
 
 app.use(post('/prismic-hook', compose([body(), async function (ctx) {
   var secret = ctx.request.body && ctx.request.body.secret
-  ctx.assert(secret === process.env.PRISMIC_ITSZOESSITE_SECRET, 403, 'Secret mismatch')
+  ctx.assert(secret === process.env.PRISMIC_SECRET, 403, 'Secret mismatch')
   return new Promise(function (resolve, reject) {
     purge(function (err, response) {
       if (err) return reject(err)

@@ -25,10 +25,10 @@
       "NODE_ENV": "production",
       "CLOUDINARY_KEY": "@cloudinary-key",
       "CLOUDINARY_SECRET": "@cloudinary-secret",
-      "PRISMIC_ITSZOESSITE_SECRET": "@prismic-itszoessite-secret",
-      "CLOUDFLARE_ITSZOESSITE_ZONE": "@cloudflare-codeandconspire-zone",
-      "CLOUDFLARE_CODEANDCONSPIRE_EMAIL": "@cloudflare-codeandconspire-email",
-      "CLOUDFLARE_CODEANDCONSPIRE_KEY": "@cloudflare-codeandconspire-key",
+      "PRISMIC_SECRET": "@prismic-itszoessite-secret",
+      "CLOUDFLARE_ZONE": "@cloudflare-itszoessite-zone",
+      "CLOUDFLARE_EMAIL": "@cloudflare-codeandconspire-email",
+      "CLOUDFLARE_KEY": "@cloudflare-codeandconspire-key",
       "POLYFILL_FEATURES": "default-3.3,Array.prototype.find,Array.prototype.findIndex,Array.prototype.includes"
     }
   },
