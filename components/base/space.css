@@ -151,19 +151,19 @@
  */
 
 .u-spaceIntro {
-  margin: 12vh 0 2.5vh;
+  margin: 1vh 0 2.5vh;
 }
 
 .u-spaceIntro--alt {
-  margin: 15vh 0 calc(var(--space) * 10);
+  margin: 1vh 0 calc(var(--space) * 5);
 }
 
 @media (min-width: 600px) {
   .u-spaceIntro {
-    margin: 20vh 0 0;
+    margin: 2vh 0 0;
   }
 
   .u-spaceIntro--alt {
-    margin: 10vh 0 calc(var(--space) * 8);
+    margin: 2vh 0 calc(var(--space) * 4);
   }
 }

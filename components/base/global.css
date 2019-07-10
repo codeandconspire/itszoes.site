@@ -59,7 +59,7 @@
     --space: 7px;
     --font-size: 20px;
     --font-size-heading: 90px;
-    --font-size-heading-intro: 129px;
+    --font-size-heading-intro: 100px;
     --font-size-heading-footer: 80px;
   }
 }
@@ -69,7 +69,7 @@
     --space: 10px;
     --font-size: 24px;
     --font-size-heading: 100px;
-    --font-size-heading-intro: 179px;
+    --font-size-heading-intro: 100px;
     --font-size-heading-footer: 120px;
   }
 }
@@ -78,7 +78,7 @@
   :root {
     --space: 14px;
     --font-size: 26px;
-    --font-size-heading: 130px;
-    --font-size-heading-intro: 215px;
+    --font-size-heading: 100px;
+    --font-size-heading-intro: 120px;
   }
 }

@@ -168,22 +168,22 @@
  */
 
 .View-divider {
-  margin: calc(var(--space) * 20) 0;
+  margin: calc(var(--space) * 1) 0;
 }
 
 
 @media (max-width: 599px) {
   .View-divider--toMd {
-    margin: calc(var(--space) * 20) 0;
+    margin: calc(var(--space) * 1) 0;
   }
 }
 
 .View-divder--sm {
-  margin: calc(var(--space) * 15) 0;
+  margin: calc(var(--space) * 1) 0;
 }
 
 .View-divder--lg {
-  margin: calc(var(--space) * 50) 0;
+  margin: calc(var(--space) * 1) 0;
 }
 
 .View-headline {

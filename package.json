@@ -47,6 +47,7 @@
     "standard": "^10.0.3"
   },
   "dependencies": {
+    "acorn": "^6.2.0",
     "cccpurge": "^1.4.0",
     "choo": "^6.13.3",
     "choo-meta": "^1.0.4",
@@ -55,7 +56,7 @@
     "dedent": "^0.7.0",
     "dotenv": "^6.0.0",
     "hstream": "^1.2.0",
-    "jalla": "^0.12.0-7",
+    "jalla": "^0.12.0-14",
     "koa-body": "^4.0.4",
     "koa-compose": "^4.1.0",
     "koa-route": "^3.2.0",
@@ -68,5 +69,10 @@
     "prismic-javascript": "^2.0.3",
     "prismic-richtext": "^0.4.0",
     "smoothscroll-polyfill": "^0.4.3"
-  }
+  },
+  "homepage": "https://github.com/codeandconspire/itszoes.site#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": []
 }
