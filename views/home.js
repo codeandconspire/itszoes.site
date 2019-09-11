@@ -24,11 +24,17 @@ function home (state, emit) {
     return html`
       <main class="View-container View-container--nudge">
         <section>
-          <h1 class="Display Display--1 u-spaceIntro u-spaceIntro--alt ${state.ui.isPartial ? 'u-slideIn' : ''}" style="${state.ui.isPartial ? 'animation-delay: 150ms;' : ''}">${asText(doc.data.title)}</h1>
+            <h1 class="Display ${animate ? 'u-slideIn' : ''} Display--intro u-spaceIntro u-spaceIntro--alt" style="${animate ? `animation-delay: 100ms;` : ''}">
+              ${text`(I'm`} 
+              <a class="View-link--intro "href="https://itszoes.site/about" target="_blank">${text`Zoe Kelly`}</a>
+              ${text`and I work with UX in Stockholm. I believe in work that is`} 
+              <a class="View-link--intro "href="https://humanebydesign.com/" target="_blank">${text`humane`}</a>
+              ${text`&`} 
+              <a class="View-link--intro " href="http://5a5f89b8e10a225a44ac-ccbed124c38c4f7a3066210c073e7d55.r9.cf1.rackcdn.com/files/pdfs/news/Empathy_on_the_Edge.pdf" target="_blank">${text`empathetic`}</a>
+              ${text`by design.)`}
+            </h1>
+          
           <div class="View-grid" id="cases">
-            <div class="View-cell ${animate ? 'u-slideIn' : ''} View-headline" style="${animate ? `animation-delay: ${delay(0)}ms;` : ''}">
-              <h2 class="u-spaceB3">${text`Recent projects:`}</h2>
-            </div>
             ${doc.data.featured_cases.map(function (props, i) {
               state.prismic.getByUID('page', props.page.uid, {prefetch: true}, function (err, doc) {
                 if (!err && doc) Figure.prefetch(doc.data.image)

@@ -6,10 +6,35 @@
 .Display-link {
   display: block;
   color: var(--color);
+  font-weight: bold;
   font-size: inherit;
   line-height: 1.2;
+}
+
+/**
+ * Display-intro link
+ */ 
+
+.Display--intro,
+.Display--intro-link {
+  font-size: var(--font-size-heading-intro);
+  line-height: var(--font-size-line-height);
   font-weight: bold;
 }
+
+.Display--intro-link {
+  color: var(--link-color);
+}
+
+.Display--link:hover {
+  color: #fff;
+  background: var(--color);
+}
+
+/**
+ * Display-intro link
+ */ 
+
 
 .Display--1 {
   font-size: var(--font-size-heading);
@@ -29,7 +54,6 @@
   display: inline-block;
   position: relative;
   color: var(--link-color);
-
   font-weight: bold;
   color: var(--link-color);
   text-decoration: none;
@@ -41,3 +65,29 @@
   color: #fff;
   background: var(--color);
 }
+
+@media (min-width: 400px) {
+.Display--intro,
+.Display--intro-link {
+  max-width:17em;
+}
+}
+
+@media (min-width: 600px) {
+
+  .Display--intro,
+.Display--intro-link {
+  max-width:19em;
+}
+  
+}
+
+@media (min-width: 1000px) {
+
+  .Display--intro,
+.Display--intro-link {
+  max-width:20em;
+}
+  
+}
+

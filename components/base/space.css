@@ -15,8 +15,8 @@
 }
 
 .u-spaceT2 {
-  margin-top: calc(var(--space) * 2) !important;
-}
+  margin-top: calc(var(--space) * 4) !important;
+  margin-bottom: calc(var(--space) * 1) !important;}
 
 .u-spaceT3 {
   margin-top: calc(var(--space) * 3) !important;
@@ -151,11 +151,11 @@
  */
 
 .u-spaceIntro {
-  margin: 1vh 0 2.5vh;
+  margin: 1vh 0 0vh;
 }
 
 .u-spaceIntro--alt {
-  margin: 1vh 0 calc(var(--space) * 5);
+  margin-top: 7vh;
 }
 
 @media (min-width: 600px) {
@@ -164,6 +164,6 @@
   }
 
   .u-spaceIntro--alt {
-    margin: 2vh 0 calc(var(--space) * 4);
+    margin-top: 9vh;
   }
 }

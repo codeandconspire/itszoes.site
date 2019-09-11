@@ -25,7 +25,7 @@ function pageView (state, emit) {
           if (featured) {
             return html`
               <main class="View-container View-container--nudge View-container--fill">
-                <h1 class="Display Display--1 u-spaceIntro u-spaceB8 ${state.ui.isPartial ? 'u-slideIn' : ''}" style="${state.ui.isPartial ? 'animation-delay: 150ms;' : ''}">${asText(featured.page.data.title).trim()}</h1>
+                <h1 class="Display Display--1 u-spaceIntro u-spaceB8 ${state.ui.isPartial ? 'u-slideIn' : ''}" style="${state.ui.isPartial ? 'animation-delay: 400ms;' : ''}">${asText(featured.page.data.title).trim()}</h1>
                 <div class="View-reverse View-reverse--md">
                   ${featured.page.data.image.url ? html`
                     <div class="u-spaceT4 u-spaceB4 ${state.ui.isPartial ? 'u-slideIn' : ''}" style="${state.ui.isPartial ? 'animation-delay: 200ms;' : ''}">
@@ -46,7 +46,7 @@ function pageView (state, emit) {
 
     return html`
       <main class="View-container View-container--nudge">
-        <h1 class="Display Display--1 u-spaceIntro u-spaceB8 ${state.ui.isPartial ? 'u-slideIn' : ''}" style="${state.ui.isPartial ? 'animation-delay: 150ms;' : ''}">${asText(doc.data.title).trim()}</h1>
+        <h1 class="Display Display--1 u-spaceIntro u-spaceB8 u-spaceT8 ${state.ui.isPartial ? 'u-slideIn' : ''}" style="${state.ui.isPartial ? 'animation-delay: 150ms;' : ''}">${asText(doc.data.title).trim()}</h1>
         <div class="View-reverse View-reverse--md">
           ${doc.data.image.url ? html`
             <div class="u-spaceT4 u-spaceB4 ${state.ui.isPartial ? 'u-slideIn' : ''}" style="${state.ui.isPartial ? 'animation-delay: 225ms;' : ''}">
@@ -106,12 +106,12 @@ function pageView (state, emit) {
             case 'heading': return html`
               <div class="View-divider">
                 <div class="View-grid u-spaceT8 u-spaceB8">
-                  <div class="View-cell u-md-size1of2 u-lg-size1of3 u-spaceB6">
+                  <div class="View-cell u-md-size1of2 u-lg-size1of3 u-spaceB2">
                     <div class="Text">
-                      <h2>${asText(slice.primary.heading).trim()}</h2>
+                      <h2 >${asText(slice.primary.heading).trim()}</h2>
                     </div>
                   </div>
-                  <div class="View-cell u-md-size1of2 u-lg-size2of3">
+                  <div class="View-cell u-lg-size2of3">
                     <div class="View-grid">
                       ${slice.items.map((item) => html`
                         <div class="View-cell u-lg-size1of2 u-spaceB6">
@@ -190,7 +190,7 @@ class Topic extends Component {
       <div id="${this.id}">
         ${props.heading ? html`
           <div class="Text Text--full">
-            <h2>${asText(props.heading).trim()}</h2>
+            <h2 class="u-spaceT2">${asText(props.heading).trim()}</h2>
           </div>
         ` : null}
         <div class="Text Text--wide u-spaceB6">

@@ -75,7 +75,7 @@
   .u-md-size1of3,
   .u-md-size2of6 {
     flex-basis: auto !important;
-    width: calc(100% * 1 / 3) !important;
+    width: calc(100% * 3 / 3) !important;
   }
 
   .u-md-size2of5 {
@@ -98,7 +98,7 @@
   .u-md-size2of3,
   .u-md-size4of6 {
     flex-basis: auto !important;
-    width: calc(100% * 2 / 3) !important;
+    width: calc(100% * 3 / 3) !important;
   }
 
   .u-md-size3of4 {
@@ -140,7 +140,7 @@
   .u-lg-size1of3,
   .u-lg-size2of6 {
     flex-basis: auto !important;
-    width: calc(100% * 1 / 3) !important;
+    width: calc(100% * 3 / 3) !important;
   }
 
   .u-lg-size2of5 {
@@ -163,7 +163,7 @@
   .u-lg-size2of3,
   .u-lg-size4of6 {
     flex-basis: auto !important;
-    width: calc(100% * 2 / 3) !important;
+    width: calc(100% * 3 / 3) !important;
   }
 
   .u-lg-size3of4 {
