@@ -49,6 +49,7 @@
   position: absolute;
   z-index: 2;
   user-select: none;
+  line-height:1.1;
 }
 
 
