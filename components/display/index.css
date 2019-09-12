@@ -22,6 +22,14 @@
   font-weight: bold;
 }
 
+
+.Display--subtitle {
+  font-size: var(--font-size-heading-subtitle);
+  line-height: 1.25;
+  font-weight: bold;
+
+}
+
 .Display--intro-link {
   color: var(--link-color);
 }
@@ -70,23 +78,32 @@
 .Display--intro,
 .Display--intro-link {
   max-width:17em;
+  line-height: 1.1;
 }
 }
 
 @media (min-width: 600px) {
 
-  .Display--intro,
+.Display--intro,
 .Display--intro-link {
   max-width:19em;
+  line-height: 1.1;
 }
   
 }
 
 @media (min-width: 1000px) {
+.Display--subtitle {
+  max-width:20em;
+  line-height: 1.15;
 
-  .Display--intro,
+}
+
+.Display--intro,
 .Display--intro-link {
   max-width:20em;
+  line-height: 1.1;
+
 }
   
 }

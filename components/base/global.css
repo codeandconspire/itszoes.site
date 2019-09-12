@@ -31,6 +31,7 @@
   --font-size: 16px;
   --font-size-heading: 32px;
   --font-size-heading-intro: 20px;
+  --font-size-heading-subtitle: 20px;
   --font-size-heading-footer: 25px;
 }
 
@@ -40,6 +41,7 @@
     --font-size: 16px;
     --font-size-heading: 38px;
     --font-size-heading-intro: 25px;
+    --font-size-heading-subtitle: 20px;
     --font-size-heading-footer: 29px;
   }
 }
@@ -50,6 +52,7 @@
     --font-size: 16px;
     --font-size-heading: 60px;
     --font-size-heading-intro: 28px;
+    --font-size-heading-subtitle: 24px;
     --font-size-heading-intro-line-height: 1.0;
   }
 }
@@ -60,6 +63,8 @@
     --font-size: 18px;
     --font-size-heading: 90px;
     --font-size-heading-intro: 30px;
+    --font-size-heading-subtitle: 29px;
+
   }
 }
 
@@ -69,6 +74,8 @@
     --font-size: 22px;
     --font-size-heading: 100px;
     --font-size-heading-intro: 40px;
+    --font-size-heading-subtitle: 33px;
+
   }
 }
 
@@ -78,5 +85,7 @@
     --font-size: 24px;
     --font-size-heading: 100px;
     --font-size-heading-intro: 40px;
+    --font-size-heading-subtitle: 33px;
+
   }
 }

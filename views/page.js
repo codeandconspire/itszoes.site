@@ -106,10 +106,8 @@ function pageView (state, emit) {
             case 'heading': return html`
               <div class="View-divider">
                 <div class="View-grid u-spaceT8 u-spaceB8">
-                  <div class="View-cell u-md-size1of2 u-lg-size1of3 u-spaceB2">
-                    <div class="Text">
-                      <h2 >${asText(slice.primary.heading).trim()}</h2>
-                    </div>
+                  <div class="View-cell u-md-size1of2 u-lg-size1of3 u-spaceB4">
+                      <h2 class ="Display--subtitle" >${asText(slice.primary.heading).trim()}</h2>
                   </div>
                   <div class="View-cell u-lg-size2of3">
                     <div class="View-grid">

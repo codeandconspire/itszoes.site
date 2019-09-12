@@ -152,25 +152,18 @@
 
 .u-spaceIntro {
   margin: 1vh 0 0vh;
-  line-height: 1.1;
 }
 
 .u-spaceIntro--alt {
   margin-top: 7vh;
-  line-height: 1.1;
-
 }
 
 @media (min-width: 600px) {
   .u-spaceIntro {
     margin: 2vh 0 0;
-    line-height: 1.1;
-
   }
 
   .u-spaceIntro--alt {
     margin-top: 9vh;
-    line-height: 1.1;
-
   }
 }
