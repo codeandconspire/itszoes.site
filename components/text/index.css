@@ -4,8 +4,10 @@
 
 .Text {
   display: block;
+  line-height: 1.4;
   width: 100%;
   max-width: 40em;
+  letter-spacing: -0.2px;
 }
 
 .Text--full {

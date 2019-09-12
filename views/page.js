@@ -85,7 +85,7 @@ function pageView (state, emit) {
               </div>
             `
             case 'image': return html`
-              <div class="u-spaceB4">
+              <div class=" u-spaceB6">
                 ${state.cache(Figure, Figure.id(slice.primary.image)).render(slice.primary.image, slice.primary.caption)}
               </div>
             `
