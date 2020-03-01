@@ -11,9 +11,10 @@ module.exports = class Header extends Component {
     this.emit = emit
   }
 
-  static id (img) {
-    return img.url.match(/.+\/(.+?)\.(?:jpg|jpeg|png|svg|gif|webp)$/)[1]
+ static id (img) {
+    return img.url.match(/.+\/(.+?)\.(?:jpg|jpeg|png|svg|gif|webp)(?:\?|$)/)[1]
   }
+
 
   static prefetch (props) {
     if (!props.url || typeof window === 'undefined') return
@@ -60,7 +61,7 @@ module.exports = class Header extends Component {
 }
 
 function getImage (props, size) {
-  if (/\.gifv?$/.test(props.url)) {
+  if (/\.gifv?(?:\?|$)/.test(props.url)) {
     let { alt, url, dimensions: { width, height } } = props
     return html`
       <div>
