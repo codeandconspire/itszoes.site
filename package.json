@@ -34,12 +34,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codeandconspire/itszoes.site.git"
+    "url": "git+https://github.com/zkelly24/itszoes.site.git"
   },
   "author": "code and conspire",
   "license": "CC-BY",
   "bugs": {
-    "url": "https://github.com/codeandconspire/itszoes.site/issues"
+    "url": "https://github.com/zkelly24/itszoes.site/issues"
   },
   "devDependencies": {
     "choo-devtools": "^2.5.0",
@@ -70,7 +70,7 @@
     "prismic-richtext": "^0.4.0",
     "smoothscroll-polyfill": "^0.4.3"
   },
-  "homepage": "https://github.com/codeandconspire/itszoes.site#readme",
+  "homepage": "https://github.com/zkelly24/itszoes.site#readme",
   "directories": {
     "lib": "lib"
   },
