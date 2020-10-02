@@ -6,12 +6,7 @@
   "scripts": {
     "test": "standard && dependency-check package.json",
     "start": "node server.js",
-<<<<<<< HEAD
-    "build": "jalla build index.js --sw sw.js",
-    "deploy": "npx now --scope codeandconspire && npx now alias --scope codeandconspire"
-=======
     "build": "jalla build index.js --sw sw.js"
->>>>>>> 3f4ff2f917c8b0b1f944081f92d56c71776e016c
   },
   "documentify": {
     "transform": [
@@ -38,7 +33,7 @@
     "standard": "^10.0.3"
   },
   "dependencies": {
-    "acorn": "^6.4.1",
+    "acorn": "^6.2.0",
     "cccpurge": "^1.4.0",
     "choo": "^6.13.3",
     "choo-meta": "^1.0.4",
