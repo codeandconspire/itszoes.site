@@ -7,7 +7,7 @@
     "test": "standard && dependency-check package.json",
     "start": "node server.js",
     "build": "jalla build index.js --sw sw.js",
-    "deploy": "npx now --scope codeandconspire && npx now alias -T codeandconspire"
+    "deploy": "npx now --scope codeandconspire && npx now alias --scope codeandconspire"
   },
   "documentify": {
     "transform": [
@@ -34,12 +34,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zkelly24/itszoes.site.git"
+    "url": "git+https://github.com/codeandconspire/itszoes.site.git"
   },
   "author": "code and conspire",
   "license": "CC-BY",
   "bugs": {
-    "url": "https://github.com/zkelly24/itszoes.site/issues"
+    "url": "https://github.com/codeandconspire/itszoes.site/issues"
   },
   "devDependencies": {
     "choo-devtools": "^2.5.0",
@@ -47,7 +47,7 @@
     "standard": "^10.0.3"
   },
   "dependencies": {
-    "acorn": "^6.2.0",
+    "acorn": "^6.4.1",
     "cccpurge": "^1.4.0",
     "choo": "^6.13.3",
     "choo-meta": "^1.0.4",
@@ -70,7 +70,7 @@
     "prismic-richtext": "^0.4.0",
     "smoothscroll-polyfill": "^0.4.3"
   },
-  "homepage": "https://github.com/zkelly24/itszoes.site#readme",
+  "homepage": "https://github.com/codeandconspire/itszoes.site#readme",
   "directories": {
     "lib": "lib"
   },
