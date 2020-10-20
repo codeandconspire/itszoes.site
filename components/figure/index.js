@@ -64,12 +64,12 @@ function getImage (props, size) {
   var sizes = [640, 750, 1125, 1440, [2880, 'q_80'], [3840, 'q_70']]
 
   if (size === 'half') {
-    viewport = '(min-midth: 600px) 50vw, 100vw'
+    viewport = '(min-width: 600px) 50vw, 100vw'
     sizes = [640, 750, 1125, 1440, [2880, 'q_80'], [3840, 'q_70']]
   }
 
   if (size === 'third') {
-    viewport = '(min-midth: 600px) 30vw, 50vw'
+    viewport = '(min-width: 600px) 30vw, 50vw'
     sizes = [640, 750, 1125, 1440, [2880, 'q_80'], [3840, 'q_70']]
   }
 
