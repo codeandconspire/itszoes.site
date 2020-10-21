@@ -62,8 +62,13 @@ function mousemove (el) {
   var enterLeft = 0
   var {offsetWidth, offsetHeight} = el
   var onmousemove = nanoraf(function (event) {
-    var left = ((event.offsetX - enterLeft) / offsetWidth).toFixed(2)
-    var top = ((event.offsetY - enterTop) / offsetHeight).toFixed(2)
+    var {offsetX: x, offsetY: y, layerX, layerY} = event
+    if (!x && !y && layerX && layerY) {
+      x = layerX
+      y = layerY
+    }
+    var left = ((x - enterLeft) / offsetWidth).toFixed(2)
+    var top = ((y - enterTop) / offsetHeight).toFixed(2)
     el.style.setProperty('--mouse-x', left)
     el.style.setProperty('--mouse-y', top)
   })
