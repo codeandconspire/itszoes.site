@@ -85,7 +85,10 @@ function getImage (props, size) {
       alt: props.alt || '',
       src: sources.split(' ')[0]
     }, props.dimensions)
-  }, [props.url, sizes])
+  }, [props.url, sizes.filter(function (size) {
+    if (Array.isArray(size)) size = size[0]
+    return size <= props.dimensions.width
+  })])
 
   if (!props.alternative) {
     return html`
