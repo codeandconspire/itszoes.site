@@ -1,4 +1,4 @@
-if (!process.env.HEROKU) require('dotenv/config')
+if (!+process.env.HEROKU) require('dotenv/config')
 
 var jalla = require('jalla')
 var body = require('koa-body')
@@ -14,7 +14,7 @@ var REPOSITORY = 'https://itszoessite.cdn.prismic.io/api/v2'
 
 var app = jalla('index.js', {
   sw: 'sw.js',
-  serve: Boolean(process.env.HEROKU)
+  serve: +process.env.HEROKU
 })
 
 app.use(get('/robots.txt', function (ctx, next) {
