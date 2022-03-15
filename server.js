@@ -91,7 +91,8 @@ app.use(function (ctx, next) {
 
 if (process.env.NOW && process.env.NODE_ENV === 'production') {
   purge(['/sw.js'], function (err) {
-    if (err) throw err
+    //if (err) throw err
+    if (err) console.log(err)
     start()
   })
 } else {
