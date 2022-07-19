@@ -1,10 +1,10 @@
 var html = require('choo/html')
-var {asText} = require('prismic-richtext')
+var { asText } = require('prismic-richtext')
 var view = require('../components/view')
 var Figure = require('../components/figure')
 var Takeover = require('../components/takeover')
 var Header = require('../components/view/header')
-var {i18n, resolve} = require('../components/base')
+var { i18n, resolve } = require('../components/base')
 
 var text = i18n()
 
@@ -24,7 +24,7 @@ function home (state, emit) {
     return html`
       <main class="View-container View-container--nudge">
         <section>
-            <h1 class="Display ${animate ? 'u-slideIn' : ''} Display--intro u-spaceIntro u-spaceIntro--alt" style="${animate ? `animation-delay: 100ms;` : ''}">
+            <h1 class="Display ${animate ? 'u-slideIn' : ''} Display--intro u-spaceIntro u-spaceIntro--alt" style="${animate ? 'animation-delay: 100ms;' : ''}">
               ${text`(I'm`} 
               <a class="View-link--intro "href="https://itszoes.site/about" target="_blank">${text`Zoe Kelly`}</a>
               ${text`and I work with UX in Stockholm. I believe in work that is`} 
@@ -36,13 +36,13 @@ function home (state, emit) {
           
           <div class="View-grid" id="cases">
             ${doc.data.featured_cases.map(function (props, i) {
-              state.prismic.getByUID('page', props.page.uid, {prefetch: true}, function (err, doc) {
+              state.prismic.getByUID('page', props.page.uid, { prefetch: true }, function (err, doc) {
                 if (!err && doc) Figure.prefetch(doc.data.image)
               })
               return html`
                 <div class="View-cell u-md-size1of2 u-spaceT6 ${animate ? 'u-slideIn' : ''}" style="${animate ? `animation-delay: ${delay(i)}ms;` : ''}">
                   <a href="${resolve(props.page)}" class="Figure-outer" onclick=${explode} onmouseover=${prefetch(props.page.id)} ontouchstart=${prefetch(props.page.id)}>
-                    ${state.cache(Figure, `${props.page.uid}-${Figure.id(props.image)}:${state.ui.isPartial}`, {interactive: true, size: 'half'}).render(props.image)}
+                    ${state.cache(Figure, `${props.page.uid}-${Figure.id(props.image)}:${state.ui.isPartial}`, { interactive: true, size: 'half' }).render(props.image)}
                     <h3 class="u-spaceT2 u-textBold">${props.heading ? props.heading : asText(props.page.data.title)}</h3>
                     <p>${props.subline ? props.subline : asText(props.page.data.description)}</p>
                   </a>
@@ -78,7 +78,7 @@ function home (state, emit) {
 
   function prefetch (id) {
     return function () {
-      state.prismic.getByID(id, {prefetch: true})
+      state.prismic.getByID(id, { prefetch: true })
     }
   }
 }
@@ -86,7 +86,7 @@ function home (state, emit) {
 function meta (state) {
   return state.prismic.getSingle('homepage', function (err, doc) {
     if (err) throw err
-    if (!doc) return {title: text`Loading`}
+    if (!doc) return { title: text`Loading` }
     return {
       'og:image': '/share.png',
       title: 'Zoe Kelly',

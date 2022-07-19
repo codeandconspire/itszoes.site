@@ -15,13 +15,13 @@ if (typeof window !== 'undefined') {
   window.addEventListener('resize', nanoraf(function () {
     for (let i = 0, len = cache.length, el; i < len; i++) {
       el = cache[i][0]
-      cache[i][1] = {top: el.offsetTop, height: el.offsetHeight}
+      cache[i][1] = { top: el.offsetTop, height: el.offsetHeight }
       inview(cache[i])
     }
   }))
   window.addEventListener('scroll', nanoraf(function () {
     for (let i = 0, len = cache.length; i < len; i++) inview(cache[i])
-  }), {passive: true})
+  }), { passive: true })
 }
 
 // inspect element position relative to scroll offset
@@ -60,9 +60,9 @@ exports.mousemove = mousemove
 function mousemove (el) {
   var enterTop = 0
   var enterLeft = 0
-  var {offsetWidth, offsetHeight} = el
+  var { offsetWidth, offsetHeight } = el
   var onmousemove = nanoraf(function (event) {
-    var {offsetX: x, offsetY: y, layerX, layerY} = event
+    var { offsetX: x, offsetY: y, layerX, layerY } = event
     if (!x && !y && layerX && layerY) {
       x = layerX
       y = layerY
@@ -119,7 +119,7 @@ function observe (el, cb) {
 
   var index = cache.findIndex((item) => item[0] === el)
   if (index === -1) {
-    index = cache.push([el, {top: offset(el), height: el.offsetHeight}, cb]) - 1
+    index = cache.push([el, { top: offset(el), height: el.offsetHeight }, cb]) - 1
   }
 
   inview(cache[index])

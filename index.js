@@ -3,7 +3,7 @@ var middleware = require('./lib/prismic-middleware')
 
 var REPOSITORY = 'https://itszoessite.cdn.prismic.io/api/v2'
 
-var app = choo({hash: false})
+var app = choo({ hash: false })
 
 app.use(require('./stores/reset'))
 

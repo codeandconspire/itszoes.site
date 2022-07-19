@@ -8,7 +8,7 @@ var { get, post } = require('koa-route')
 var Prismic = require('prismic-javascript')
 var purge = require('./lib/purge')
 var imageproxy = require('./lib/cloudinary-proxy')
-var {resolve} = require('./components/base')
+var { resolve } = require('./components/base')
 
 var REPOSITORY = 'https://itszoessite.cdn.prismic.io/api/v2'
 
@@ -91,7 +91,7 @@ app.use(function (ctx, next) {
 
 if (process.env.NOW && process.env.NODE_ENV === 'production') {
   purge(['/sw.js'], function (err) {
-    //if (err) throw err
+    // if (err) throw err
     if (err) console.log(err)
     start()
   })

@@ -23,7 +23,7 @@ module.exports = class Takeover extends Component {
 
     self.emit('ui:transition')
     this.emit('ui:partial', href, function (view) {
-      var {innerHeight, innerWidth} = window
+      var { innerHeight, innerWidth } = window
       var { left, top } = coordinates
       var style = `left: ${left}px; top: ${top}px;`
       var isSlow = (

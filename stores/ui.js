@@ -21,7 +21,7 @@ function ui (state, emitter, app) {
         href: href,
         route: matched.route,
         params: matched.params,
-        ui: Object.assign({}, state.ui, {isPartial: true})
+        ui: Object.assign({}, state.ui, { isPartial: true })
       })
       // pluck out header component from cache and pre-rerender with next route
       state.cache(Header, 'header').render(matched.route)

@@ -30,7 +30,7 @@
   "devDependencies": {
     "choo-devtools": "^2.5.1",
     "dependency-check": "^3.4.1",
-    "standard": "^10.0.3"
+    "standard": "^15.0.1"
   },
   "dependencies": {
     "acorn": "^6.4.2",

@@ -1,6 +1,6 @@
 var html = require('choo/html')
 var Component = require('choo/component')
-var {mousemove, memo, srcset} = require('../base')
+var { mousemove, memo, srcset } = require('../base')
 
 module.exports = class Header extends Component {
   constructor (id, state, emit, opts) {
@@ -51,9 +51,11 @@ module.exports = class Header extends Component {
         <div class="Figure-container ${alt ? 'Figure-container--alternative' : ''}" style="--Figure-aspect: ${(img.dimensions.height / img.dimensions.width * 100).toFixed(2)}%; ${alt ? `--Figure-aspect-alternative: ${(alt.dimensions.height / alt.dimensions.width * 100).toFixed(2)}%` : ''}">
           ${img.url ? getImage(img, this.size) : null}
         </div>
-        ${caption ? html`
-          <figcaption class="u-spaceT2 u-spaceB2">${caption}</figcaption>
-        ` : null}
+        ${caption
+          ? html`
+              <figcaption class="u-spaceT2 u-spaceB2">${caption}</figcaption>
+            `
+          : null}
       </figure>
     `
   }

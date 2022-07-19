@@ -1,6 +1,6 @@
 var html = require('choo/html')
 var error = require('./error')
-var {i18n} = require('../base')
+var { i18n } = require('../base')
 var Header = require('./header')
 var Footer = require('./footer')
 var Takeover = require('../takeover')
@@ -24,7 +24,7 @@ function createView (view, meta) {
     var children
     try {
       children = state.error ? error(state.error) : view(state, emit)
-      let next = meta(state)
+      const next = meta(state)
       if (next.title !== DEFAULT_TITLE) {
         next.title = `${next.title} ~ ${DEFAULT_TITLE}`
       }
@@ -40,8 +40,8 @@ function createView (view, meta) {
     }
 
     MENU.forEach(function ([type, uid]) {
-      if (uid) state.prismic.getByUID(type, uid, {prefetch: true})
-      else state.prismic.getSingle(type, {prefetch: true})
+      if (uid) state.prismic.getByUID(type, uid, { prefetch: true })
+      else state.prismic.getSingle(type, { prefetch: true })
     })
 
     return html`
